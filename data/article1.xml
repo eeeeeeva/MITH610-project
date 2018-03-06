@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/Vault/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/Vault/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Cheerleaders -- A Tiny Issue</title>
+            <author>
+                <persName>
+                  <forename>Eva</forename>
+                  <surname>Peskin</surname>
+                </persName>
+              </author>
+              <respStmt>
+                  <resp>A phrase describing the nature of a person's role, responsibility, or contribution to the endcoding project. A space to think critically about the acknowledgement and visible and invisible labor that makes this project possible.
+                  </resp>
+                  <persName>Other people who contributed to the project</persName>
+         </titleStmt>
+         <publicationStmt>
+            <p>blah blah not sure </p>
+         </publicationStmt>
+         <sourceDesc>
+           <sourceDesc>
+            <bibl>
+              <title level="a">Cheerleaders -- A Tiny Issue</title>. In
+              <author>Victor E Neuberg</author>, <title>The Penny Histories</title>.
+                <publisher>OUP</publisher>
+  <date>1968</date>. </bibl>
+</sourceDesc>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+      <div type="article">
+        <!--redo text with column breaks preserved-->
+        <p>Racism is a very grave is­-<lb break="no" />sue at the University. <lb break="yes" />It is an issue that concerns <lb break="no" />all black students on campus <lb break="no" />in a very personal way and it <lb break="no" />should concern the white stu-<lb break="yes" />­dents more for they are the <lb break="no" />ones guilty of racism.</p>
+        <p>The <orgName>Black Student Union</orgName>, of <lb break="no" />course, has a responsibility to <lb break="no" />its membership and to the en­-<lb break="yes" />tire University community to <lb break="no" />call attention to the racial <lb break="no" />problems that beset this cam­-<lb break="yes" />pus. But so far the only prob­-<lb break="yes" />lems that <orgName>BSU</orgName> has amplified <lb break="no" />are the home economics <lb break="no" />experiment which excluded <lb break="no" />Negro participants and the <lb break="no" />cheerleading squad which al­-<lb break="yes" />legedly discriminated against <lb break="no" />black students.</p>
+        <p>These are not fitting issues <lb break="no" />around which to build a cam­-<lb break="yes" />paign against latent and blatant <lb break="no" />racism on campus. Lack of <lb break="no" />representation on the cheer­-<lb break="yes" />leading squad is obviously a <lb break="no" />manifestation of a much larger <lb break="no" />problem but there are many <lb break="no" />students on campus, and <lb break="no" />worse, many administrators <lb break="no" />who seem to be unaware of <lb break="no" />these problems.</p>
+        <p>Why, in a state which is 15 per cent black, is the Univer­sity only 2 per cent black? Why is the University so weak in recruiting and awarding scholarships to black ath­letes? Why is the Board of Regents exclusively white? Why is the Maryland State campus so deplorable? Why is it predominantly black? Why is it that white Univer­sity students whisper to one another when they see a black student raise a clenched fist as the national anthem is sung at a basketball game? BSU has failed to make its real concerns known to the University community. It has failed to gain the sympathy of white students and adminis­trators who agree that the University is a racist institu­tion.</p>
+        <p>Because of its insistence on dwelling on relatively in­significant examples of dis­crimination, BSU seems to be attempting to *** students that there are larger racial problems on campus, and hence, no urgent ones. BSU is going about the prob­lem of eliminating racism on campus by attacking each in­stance of discrimination as it is discovered — no matter how insignificant, no matter how unintentional. Using that tact, BSU should eliminate racism in about 1,000 years. The correct approach is to attack the bigger problems and gain the sympathy of the mod­erate blacks and the liberal whites. With this sort of coalition, the administration and the student body can no longer afford to ignore BSU.</p>
+      </div>
+    </body>
+  </text>
+</TEI>
