@@ -16,18 +16,17 @@
                   <resp>A phrase describing the nature of a person's role, responsibility, or contribution to the endcoding project. A space to think critically about the acknowledgement and visible and invisible labor that makes this project possible.
                   </resp>
                   <persName>Other people who contributed to the project</persName>
+              </respStmt>
          </titleStmt>
          <publicationStmt>
             <p>blah blah not sure </p>
          </publicationStmt>
          <sourceDesc>
-           <sourceDesc>
             <bibl>
               <title level="a">Cheerleaders -- A Tiny Issue</title>. In
               <author>Victor E Neuberg</author>, <title>The Penny Histories</title>.
                 <publisher>OUP</publisher>
-  <date>1968</date>. </bibl>
-</sourceDesc>
+                <date>1968</date>. </bibl>
          </sourceDesc>
       </fileDesc>
   </teiHeader>

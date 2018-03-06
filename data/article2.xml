@@ -1,3 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/Vault/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/Vault/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Cheerleaders -- A Tiny Issue</title>
+            <author>
+                <persName>
+                  <forename>Eva</forename>
+                  <surname>Peskin</surname>
+                </persName>
+              </author>
+              <respStmt>
+                  <resp>A phrase describing the nature of a person's role, responsibility, or contribution to the endcoding project. A space to think critically about the acknowledgement and visible and invisible labor that makes this project possible.
+                  </resp>
+                  <persName>Other people who contributed to the project</persName>
+              </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>blah blah not sure </p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+              <title level="a">Cheerleaders -- A Tiny Issue</title>. In
+              <author>Victor E Neuberg</author>, <title>The Penny Histories</title>.
+                <publisher>OUP</publisher>
+                <date>1968</date>. </bibl>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+      <div type="article">
+
 Central Student Court has fin­
 ally reached a verdict in the
 case of Student Government As­
