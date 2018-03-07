@@ -6,3 +6,27 @@
 tei-teiHeader {
   display: none;
 }
+
+body {
+  background-color: cyan; border: 4px; border-color: magenta;
+}
+
+title {
+  color: yellow;
+}
+
+div {
+  font-family: serif; color: white;
+}
+
+tei-supplied {
+  font-style: italic; color: magenta;
+}
+
+tei-supplied:before {
+  content: "["
+}
+
+tei-supplied:after {
+  content:"]"
+}

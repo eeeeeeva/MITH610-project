@@ -5,34 +5,291 @@
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Cheerleaders -- A Tiny Issue</title>
+            <title type="main">Article 1: Cheerleaders -- A Tiny Issue</title>
+            <title type="sub">Digital Edition</title>
             <author>
-                <persName>
-                  <forename>Eva</forename>
-                  <surname>Peskin</surname>
+                <persName xml:id="EMP">
+                    <forename>Eva</forename>
+                    <surname>Peskin</surname>
                 </persName>
-              </author>
-              <respStmt>
-                  <resp>A phrase describing the nature of a person's role, responsibility, or contribution to the endcoding project. A space to think critically about the acknowledgement and visible and invisible labor that makes this project possible.
-                  </resp>
-                  <persName>Other people who contributed to the project</persName>
-              </respStmt>
+                <orgName xml:id="MITH610">Critical Topics in Digital Studies</orgName>
+            </author>
+            <respStmt>
+                <resp>Encoded by</resp>
+                <persName ref="#EMP">
+                    <forename>Eva</forename>
+                    <surname>Peskin</surname>
+                </persName>
+            </respStmt>
+            <respStmt>
+                <resp>Edited as part of MITH610</resp>
+                <orgName ref="#MITH610">Critical Topics in Digital Studies</orgName>
+            </respStmt>
+            <respStmt>
+                <resp>Instructors</resp>
+                <persName xml:id="MK">Matthew Kirschenbaum</persName>
+                <persName xml:id="JLU">Jessica Lu</persName>
+                <persName xml:id="RV">Raffaele Viglianti</persName>
+            </respStmt>
+            <respStmt>
+                <resp>Student newspapers archived and provided by</resp>
+                <orgName xml:id="UA">University Archives
+                    <placeName>University of Maryland
+                        <settlement>College Park</settlement>
+                        <region>Maryland</region>
+                    </placeName>
+                </orgName>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+             <edition n="1">First edition</edition>
+         </editionStmt>
+         <extent>
+             <measure unit="pages" quantity="1">1 partial pages of original source material</measure>
+         </extent>
          <publicationStmt>
-            <p>blah blah not sure </p>
+             <publisher>
+                 <orgName ref="#MITH610">Critical Topics in Digital Studies</orgName>
+             </publisher>
+             <pubPlace>
+                 <settlement>College Park</settlement>
+                 <region>Maryland</region>
+             </pubPlace>
+             <date when="2018-03-13">March 13, 2018</date>
+             <availability status="free">
+                 <p>In the public domain.</p>
+             </availability>
          </publicationStmt>
+         <seriesStmt>
+             <title>Exercise 1: Reimagining the Archive</title>
+             <respStmt>
+                 <resp>Essayed by</resp>
+                 <persName ref="#EMP">Eva Peskin</persName>
+             </respStmt>
+         </seriesStmt>
          <sourceDesc>
-            <bibl>
-              <title level="a">Cheerleaders -- A Tiny Issue</title>. In
-              <author>Victor E Neuberg</author>, <title>The Penny Histories</title>.
-                <publisher>OUP</publisher>
-                <date>1968</date>. </bibl>
-         </sourceDesc>
+             <listBibl>
+             <biblStruct>
+                 <analytic>
+                     <title>Cheerleaders -- A Tiny Issue</title>
+                     <author>
+                         <persName xml:id="UND">Undefined</persName>
+                     </author>
+                 </analytic>
+                 <monogr>
+                     <title level="j">The Diamondback</title>
+                     <imprint>
+                         <publisher>Maryland Media Inc.</publisher>
+                         <pubPlace>
+                             <region>College Park</region>
+                             <settlement>Maryland</settlement>
+                         </pubPlace>
+                         <date when="1969-02-18">February 18, 1969</date>
+                     </imprint>
+                     <biblScope unit="volume">61</biblScope>
+                     <biblScope unit="number">98</biblScope>
+                     <biblScope unit="page">6</biblScope>
+                 </monogr>
+             </biblStruct>
+             <bibl xml:id="EP"><!--EVA THIS IS THE PART WHERE YOU PUT IN ALL THE CRITICAL THINKING CHOICES YOU MAKE! -->
+                 <title>PUT IN THE TITLE OF THE PROJECT HERE</title>
+                 <author>
+                     <persName ref="#EMP">Eva Peskin</persName>
+                 </author>
+             </bibl>
+             <bibl>
+                 <interpGrp resp="#EP" type="idea"> <!-- Search for "interGrp" in the TEI guidelines to learn more about how we can use this element to conduct an ideational analysis! -->
+                     <desc>Ideational analysis of freedom.</desc>
+                     <interp xml:id="LAND">Land</interp>
+                     <interp xml:id="LAB">Labor</interp>
+                     <interp xml:id="EDU">Education</interp>
+                     <interp xml:id="REL">Relief</interp>
+                     <interp xml:id="JUST">Justice</interp>
+                 </interpGrp>
+             </bibl>
+             </listBibl>
+        </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+          <editorialDecl><!--EVA THIS IS THE PART WHERE YOU DESCRIBE YOUR LOGIC! -->
+              <p>All typographical errors have been preserved. When possible, suggested corrections are provided.</p>
+              <p>Structural formatting has been partially preserved. Page jumps and paragraphs have been retained, along with most line breaks. However, column breaks have not.</p>
+              <hyphenation eol="all">
+                 <p>All end-of-line hyphenation has been regularized.</p>
+             </hyphenation>
+          </editorialDecl>
+          <projectDesc><!--EVA THIS IS THE PART WHERE YOU DESCRIBE YOUR LOGIC! -->
+              <p>This project aims to provide students, scholars, and practitioners with a basic introduction to the Text Encoding Initiative (TEI), in the hopes that XML training will help foster critical scholarship at the intersections of African American history, culture, and digital humanities. This free training has been provided as part of the <date from="2017" to ="2018">2017-2018</date><orgName ref="#AADHUM">AADHum</orgName> series of digital humanities incubators.</p> <!-- Use this space to craft an abstract that defines or describes the scope and purpose of the project -->
+          </projectDesc>
+      </encodingDesc>
+      <profileDesc>
+          <langUsage>
+              <language ident="en-US">United States English</language>
+          </langUsage>
+          <particDesc>
+              <listOrg>
+                  <org>
+                      <orgName xml:id="UMD" ref="https://lccn.loc.gov/n79054042">University of Maryland, College Park</orgName>
+                      <idno type="LCAF">n79054042</idno>
+                      <placeName>
+                          <settlement>College Park</settlement>
+                          <region>Maryland (<abbr>M.D.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                  </org>
+                  <org>
+                      <orgName xml:id="UMDLAW" ref="https://lccn.loc.gov/n85094063">University of Maryland, School of Law</orgName>
+                      <idno type="LCAF">n85094063</idno>
+                      <placeName>
+                          <settlement>Baltimore</settlement>
+                          <region>Maryland (<abbr>M.D.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                  </org>
+                  <org>
+                      <orgName xml:id="UMDPHARM" ref="https://lccn.loc.gov/no2009018306">University of Maryland, School of Pharmacy</orgName>
+                      <idno type="LCAF">no2009018306</idno>
+                      <placeName>
+                          <settlement>Baltimore</settlement>
+                          <region>Maryland (<abbr>M.D.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                  </org>
+                  <org>
+                      <orgName xml:id="UMDDENT" ref="https://lccn.loc.gov/n88095497">University of Maryland, School of Dentistry</orgName>
+                      <idno type="LCAF">n88095497</idno>
+                      <placeName>
+                          <settlement>Baltimore</settlement>
+                          <region>Maryland (<abbr>M.D.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                  </org>
+                  <org>
+                      <orgName xml:id="UMDNURS" ref="https://lccn.loc.gov/no2009017751">University of Maryland, School of Nursing</orgName>
+                      <idno>no2009017751</idno>
+                      <placeName>
+                          <settlement>Baltimore</settlement>
+                          <region>Maryland (<abbr>M.D.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                  </org>
+                  <org>
+                      <orgName xml:id="HOW" ref="https://lccn.loc.gov/n79064543">Howard University</orgName>
+                      <idno type="LCAF">n79064543</idno>
+                      <placeName>
+                          <settlement>Washington</settlement>
+                          <region>District of Columbia (<abbr>D.C.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                  </org>
+                  <org>
+                      <orgName xml:id="MORG" ref="https://lccn.loc.gov/n50071397">Morgan State College</orgName>
+                      <idno type="LCAF">n50071397</idno>
+                      <placeName>
+                          <settlement>Baltimore</settlement>
+                          <region>Maryland (<abbr>M.D.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                      <note>Renamed as <orgName ref="https://lccn.loc.gov/n85066664">Morgan State University</orgName> in <date when="1975">1975</date>.</note>
+                  </org>
+                  <org>
+                      <orgName xml:id="ANNE" ref="https://lccn.loc.gov/n2001081467">University of Maryland, Eastern Shore</orgName>
+                      <idno type="LCAF">n2001081467</idno>
+                      <placeName>
+                          <settlement>Princess Anne</settlement>
+                          <region>Maryland (<abbr>M.D.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                      <note>Frequently referred to by its location, Princess Anne.</note>
+                  </org>
+                  <org>
+                      <orgName xml:id="SUN" ref="https://lccn.loc.gov/no2010112182">The Baltimore Sun</orgName>
+                      <idno type="LCAF">no2010112182</idno>
+                      <placeName>
+                          <settlement>Baltimore</settlement>
+                          <region>Maryland (<abbr>M.D.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                  </org>
+              </listOrg>
+              <listPerson>
+                  <person>
+                      <persName xml:id="BYRD" ref="https://lccn.loc.gov/no93017923">
+                          <forename>Harry</forename>
+                          <forename>Clifton</forename>
+                          <surname>Byrd</surname>
+                          <roleName type="office">University President, <orgName ref="#UMD">University of Maryland, College Park</orgName></roleName>
+                          <idno type="LCAF">no 93017923</idno>
+                      </persName>
+                  </person>
+                  <person>
+                      <persName xml:id="DGM" ref="https://lccn.loc.gov/n99043202">
+                          <forename>Donald</forename>
+                          <forename>Gaines</forename>
+                          <surname>Murray</surname>
+                      </persName>
+                      <idno type="LCAF">n99043202</idno>
+                  </person>
+                  <person>
+                      <persName xml:id="WBL">
+                          <roleName type="military">Major</roleName>
+                          <forename>Wilmore</forename>
+                          <surname>Leonard</surname>
+                      </persName>
+                  </person>
+                  <person>
+                      <persName xml:id="MBB">
+                          <forename>Martin</forename>
+                          <surname>Booth</surname>
+                      </persName>
+                  </person>
+                  <person>
+                      <persName xml:id="EM">
+                          <forename>Esther</forename>
+                          <surname>McCready</surname>
+                      </persName>
+                  </person>
+                  <person>
+                      <persName xml:id="HW">
+                          <forename>Hiram</forename>
+                          <surname>Whittle</surname>
+                      </persName>
+                  </person>
+                  <person>
+                      <persName xml:id="PJM" ref="https://lccn.loc.gov/n80048493">
+                          <forename>Parren</forename>
+                          <forename>James</forename>
+                          <surname>Mitchell</surname>
+                      </persName>
+                      <idno type="LCAF">n80048493</idno>
+                  </person>
+                  <personGrp>
+                      <persName xml:id="BLK">Black and African American people</persName>
+                      <note>This person group is necessary for the reading and interpretation of this text, as this text often uses "the negro" (gendered male) to generalize about all black and African Americans.</note>
+                  </personGrp>
+                  <personGrp>
+                      <persName xml:id="USM">University System of Maryland (<abbr>U.S.M.</abbr>) Board of Regents</persName>
+                      <note>The Board of Regents is comprised of 17 members, including 1 full-time student. Appointed by the Governor of Maryland, the Board oversees the university system's academic, administrative, and financial operations.</note>
+                  </personGrp>
+              </listPerson>
+          </particDesc>
+      </profileDesc>
+      <revisionDesc>
+          <change>No changes have been made at this time.</change> <!-- Use this space to later detail revisions to the digital text. -->
+      </revisionDesc>
   </teiHeader>
   <text>
       <body>
-      <div type="article">
+      <div>
+        <head rend="center">
+          <title>Cheerleaders -- A Tiny Issue</title>
+        </head>
+      </div>
+    </body>
+  </text>
+  <text>
+    <body>
+      <div>
         <!--redo text with column breaks preserved-->
         <p>Racism is a very grave is­-<lb break="no" />sue at the University. <lb break="yes" />It is an issue that concerns <lb break="no" />all black students on campus <lb break="no" />in a very personal way and it <lb break="no" />should concern the white stu-<lb break="yes" />­dents more for they are the <lb break="no" />ones guilty of racism.</p>
         <p>The <orgName>Black Student Union</orgName>, of <lb break="no" />course, has a responsibility to <lb break="no" />its membership and to the en­-<lb break="yes" />tire University community to <lb break="no" />call attention to the racial <lb break="no" />problems that beset this cam­-<lb break="yes" />pus. But so far the only prob­-<lb break="yes" />lems that <orgName>BSU</orgName> has amplified <lb break="no" />are the home economics <lb break="no" />experiment which excluded <lb break="no" />Negro participants and the <lb break="no" />cheerleading squad which al­-<lb break="yes" />legedly discriminated against <lb break="no" />black students.</p>
