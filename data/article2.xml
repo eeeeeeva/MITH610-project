@@ -5,125 +5,228 @@
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Cheerleaders -- A Tiny Issue</title>
+            <title type="main">Article 2: SGA vs. Cheerleaders - CSC reaches verdict</title>
+            <title type="sub">Digital Edition</title>
             <author>
-                <persName>
-                  <forename>Eva</forename>
-                  <surname>Peskin</surname>
+                <persName xml:id="EMP">
+                    <forename>Eva</forename>
+                    <surname>Peskin</surname>
                 </persName>
-              </author>
-              <respStmt>
-                  <resp>A phrase describing the nature of a person's role, responsibility, or contribution to the endcoding project. A space to think critically about the acknowledgement and visible and invisible labor that makes this project possible.
-                  </resp>
-                  <persName>Other people who contributed to the project</persName>
-              </respStmt>
+                <orgName xml:id="MITH610">Critical Topics in Digital Studies</orgName>
+            </author>
+            <respStmt>
+                <resp>Encoded by</resp>
+                <persName ref="#EMP">
+                    <forename>Eva</forename>
+                    <surname>Peskin</surname>
+                </persName>
+            </respStmt>
+            <respStmt>
+                <resp>Edited as part of MITH610</resp>
+                <orgName ref="#MITH610">Critical Topics in Digital Studies</orgName>
+            </respStmt>
+            <respStmt>
+                <resp>Instructors</resp>
+                <persName xml:id="MK">Matthew Kirschenbaum</persName>
+                <persName xml:id="JLU">Jessica Lu</persName>
+                <persName xml:id="RV">Raffaele Viglianti</persName>
+            </respStmt>
+            <respStmt>
+                <resp>Student newspapers archived and provided by</resp>
+                <orgName xml:id="UA">University Archives
+                    <placeName>University of Maryland
+                        <settlement>College Park</settlement>
+                        <region>Maryland</region>
+                    </placeName>
+                </orgName>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+             <edition n="1">First edition</edition>
+         </editionStmt>
+         <extent>
+             <measure unit="pages" quantity="1">1 partial page of original source material</measure>
+         </extent>
          <publicationStmt>
-            <p>blah blah not sure </p>
+             <publisher>
+                 <orgName ref="#MITH610">Critical Topics in Digital Studies</orgName>
+             </publisher>
+             <pubPlace>
+                 <settlement>College Park</settlement>
+                 <region>Maryland</region>
+             </pubPlace>
+             <date when="2018-03-13">March 13, 2018</date>
+             <availability status="free">
+                 <p>In the public domain.</p>
+             </availability>
          </publicationStmt>
+         <seriesStmt>
+             <title>Exercise 1: Reimagining the Archive</title>
+             <respStmt>
+                 <resp>Essayed by</resp>
+                 <persName ref="#EMP">Eva Peskin</persName>
+             </respStmt>
+         </seriesStmt>
          <sourceDesc>
-            <bibl>
-              <title level="a">Cheerleaders -- A Tiny Issue</title>. In
-              <author>Victor E Neuberg</author>, <title>The Penny Histories</title>.
-                <publisher>OUP</publisher>
-                <date>1968</date>. </bibl>
-         </sourceDesc>
+             <listBibl>
+             <biblStruct>
+                 <analytic>
+                     <title>Article 2: SGA vs. Cheerleaders - CSC reaches verdict</title>
+                     <author>
+                         <persName xml:id="UNK">Author Unknown</persName>
+                     </author>
+                 </analytic>
+                 <monogr>
+                     <title level="j">The Diamondback</title>
+                     <imprint>
+                         <publisher>Maryland Media Inc.</publisher>
+                         <pubPlace>
+                             <region>College Park</region>
+                             <settlement>Maryland</settlement>
+                         </pubPlace>
+                         <date when="1969-03-17">March 17, 1969</date>
+                     </imprint>
+                     <biblScope unit="volume">61</biblScope>
+                     <biblScope unit="number">98</biblScope>
+                     <biblScope unit="page">5</biblScope>
+                 </monogr>
+             </biblStruct>
+             <bibl xml:id="EP">
+                 <title>TEI Coding for Justice and Responsibility</title>
+                 <author>
+                     <persName ref="#EMP">Eva Peskin</persName>
+                 </author>
+             </bibl>
+             <bibl>
+                 <interpGrp resp="#EMP" type="idea">
+                     <desc>Actions and values related to the "facts" of discrimination.</desc>
+                     <interp xml:id="ACTF">Future action</interp>
+                     <interp xml:id="ACTP">Past action</interp>
+                     <interp xml:id="ONG">Present action or ongoing process</interp>
+                     <interp xml:id="ALL">Allegation</interp>
+                     <interp xml:id="SPEC">Speculation</interp>
+                     <interp xml:id="DET">Determination</interp>
+                     <interp xml:id="VAL">Statement of value</interp>
+                 </interpGrp>
+             </bibl>
+             </listBibl>
+        </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+          <editorialDecl>
+              <p>Paragraphs have been preserved, but line breaks have not, in order to prioritize content analysis and readability.</p>
+              <hyphenation eol="all">
+                 <p>All end-of-line hyphenation has been eliminated.</p>
+             </hyphenation>
+          </editorialDecl>
+          <projectDesc>
+              <p>This project is an assignment for the purpose of learning how to apply a Black Digital Humanities perspective through the methodology of text encoding. This assigment serves as a meanis for gaining a basic introduction to the Text Encoding Initiative (TEI), XML markup, and Github. In preparing this text, <persName ref="#EMP">I</persName> have considered how to use TEI in order to understand how past and present actions related to the case of alleged discrimination presented in this record are making assertions towards the "truth" of an incident of institutional racism.</p>
+          </projectDesc>
+      </encodingDesc>
+      <profileDesc>
+          <langUsage>
+              <language ident="en-US">United States English</language>
+          </langUsage>
+              <particDesc>
+              <listOrg>
+                  <org>
+                      <orgName xml:id="UMD" ref="https://lccn.loc.gov/n79054042">University of Maryland, College Park</orgName>
+                      <placeName>
+                          <settlement>College Park</settlement>
+                          <region>Maryland (<abbr>M.D.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                  </org>
+                  <org>
+                      <orgName xml:id="CSC">Central Student Court</orgName><!--Central Student Court has since been replaced at the University of Maryland with the Office of Student Conduct-->
+                      <placeName>
+                          <settlement>College Park</settlement>
+                          <region>Maryland (<abbr>M.D.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                  </org>
+                  <org>
+                      <orgName xml:id="CHE" ref="https://www.marylandcheerleading.com/">University of Maryland Cheerleading Squad</orgName>
+                      <placeName>
+                          <settlement>College Park</settlement>
+                          <region>Maryland (<abbr>M.D.</abbr>)</region>
+                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                      </placeName>
+                    <org>
+                        <orgName xml:id="SGA" ref="https://www.umdsga.com/">Student Government Association</orgName>
+                        <placeName>
+                            <settlement>College Park</settlement>
+                            <region>Maryland (<abbr>M.D.</abbr>)</region>
+                            <country>United States of America (<abbr>U.S.A.</abbr>)</country>
+                          </placeName>
+                      </org>
+                  </org>
+              </listOrg>
+              <listPerson>
+                  <personGrp>
+                      <persName xml:id="BLK">Black and African American people</persName>
+                      <note>The article uses black, Black, and Negro variously to denote Black and African American people. This person group collects all instances of Black and African American racial identifiers. There are instances where these qualifiers are used to directly describe individuals and groups of people, and other instances where these qualifiers are used to describe the general quality or broader demographic makeup of a place or group. The "persName" tag is used in all these cases in order to capture how race is used as a descriptor. Notably, the article does not use any racial descriptors for non-Black people.</note>
+                  </personGrp>
+                  <personGrp>
+                      <persName xml:id="STU">Students</persName>
+                  </personGrp>
+                  <personGrp>
+                      <persName xml:id="ADM">Administrators</persName>
+                  </personGrp>
+                  <personGrp>
+                      <persName xml:id="ATH">Athletes</persName>
+                  </personGrp>
+                  <personGrp>
+                      <persName xml:id="FAC">Faculty</persName>
+                  </personGrp>
+                  <personGrp>
+                      <persName xml:id="DEF">Defense</persName>
+                      <persName xml:id="PRO">Prosecution</persName>
+                  </personGrp>
+                  <personGrp>
+                      <persName ref="#CHE">Cheerleader, individual or prospective (distinct from Cheerleaders as an organization)</persName>
+                  </personGrp>
+              </listPerson>
+          </particDesc>
+      </profileDesc>
   </teiHeader>
   <text>
       <body>
-      <div type="article">
-
-Central Student Court has fin­
-ally reached a verdict in the
-case of Student Government As­
-sociation vs. the cheerleaders.
-But the results of last Thurs­
-day's decision won’t be released
-until early this week, according
-to Joseph Metz, faculty member
-in charge of CSC.
-Defense counsel for the cheer­
-leaders closed its case contend­
-ing the prosecution “failed to
-show discrimination in any
-form.’’
-"The bulk of the evidence
-brought forth by the SGA was
-hearsay," charged assistant de­
-fense counselor Tom Brown. “It
-wouldn’t stand up in a real court
-of law,’’
-Prosecuting attorney Ron Col­
-lier called two black girls who
-felt they were
-against in the fall of 1967 try­
-outs’’ to testify.
-One black girl who made the
-finals said she felt “both con­
-scious and unconscious discrimi­
-nation by the cheerleaders."
-“We were neglected help by
-them,” she said. “We were
-forced to practice among our­
-selves."
-She continued that there was a
-feeling among the black girls that
-they were “finished before we got
-started.” Since so many black
-girls felt they were being ignored,
-they dropped out, she said.
-The defense called to court a
-current cheerleader who said she
-herself was discouraged when
-she first tried out.
-She said each cheerleader has
-as many as 20 to 30 girls in
-her group at tryouts. It’s “im­
-possible to devote a lot of time
-to one girl. Most girls learn
-their cheers by practicing among
-themselves," she said.
-"I’ve never told any girl that
-I would not help her. At times,
-however, It is necessary to tell
-a girl to wait a minute when
-you’re busy elsewhere."
-She said she and other cheer­
-leaders helped black girls "arm
-and arm’’ learning various
-cheers.
-The cheerleaders themselves
-do not select the girls in the
-final tryout. Members of the fa­
-culty are chosen to be judges,
-and they select new cheerleaders.
-However, the cheerleaders do
-cut girls in the semifinals, selec­
-ting which ones go on to the
-finals.
-In response to the charge that
-the cheerleaders practiced both
-overt and covert discrimination
-at their tryouts, Brown produced
-written depositions from girls
-who had tried out this year,
-attesting to the fact that the
-cheerleaders were fair in their
-selection process and that girls
-were judged on ability alone.
-Stanley Pavey, assistant pro­
-fessor of psychology, testified
-earlier in the c«se that it is
-'•a possibility that one can dis­
-criminate without really knowing
-it.”
-Pavey said the cheerleaders
-could have inadvertently dis­
-criminated againt the blacks.
-Brown countered with, "Being
-under stress and strain as per­
-haps these black girls were, may­
-be they construed things that were
-normal as being discrimina­
-tory."
+      <div>
+        <head rend="center">
+          <title>SGA vs. Cheerleaders - CSC reaches verdict</title>
+        </head>
+      </div>
+    </body>
+  </text>
+  <text>
+    <body>
+      <div>
+        <p><orgName ref="#CSC">Central Student Court</orgName> has fin­ally <interp ana="#ONG">reached</interp> a verdict in the case of <orgName ref="#SGA">Student Government As­sociation</orgName> vs. the <orgName ref="#CHE">cheerleaders</orgName>. But the results of last Thurs­day's decision won’t be <interp ana="#ACTF">released</interp> until early this week, <interp ana="#ONG">according</interp> to <persName ref="#FAC">Joseph Metz</persName>, faculty member in charge of <orgName ref="#CSC">CSC</orgName>.
+        </p>
+        <p><persName ref="#DEF">Defense counsel</persName> for the <orgName ref="#CHE">cheer­leaders</orgName> <interp ana="#ACTP">closed</interp> its case <interp ana="#ONG">contend­ing</interp> the <persName ref="#PRO">prosecution</persName> <interp ana="#DET">“failed to show discrimination in any form."</interp>
+      </p>
+      <p>"The bulk of the evidence <interp ana="#ACTP">brought forth</interp> by the <orgName ref="#SGA">SGA</orgName> was <interp ana="#VAL">hearsay,"</interp> charged assistant de­fense counselor <persName ref="#DEF">Tom Brown</persName>. <interp ana="ALL">“It wouldn’t stand up in a real court of law."</interp>
+      </p>
+      <p>Prosecuting attorney <persName ref="#PRO">Ron Col­lier</persName> <interp ana="#ACTP">called</interp> two <persName ref="#BLK">black</persName> <persName ref="#CHE">girls</persName> who felt they were <interp ana="#ALL">"discriminated" against</interp> in the fall of 1967 try­ outs" to <interp ana="#ACTP">testify</interp>.
+      </p>
+      <p>One black <persName ref="#CHE">girl</persName> who made the finals <interp ana="#ALL">said she felt “both con­scious and unconscious discrimi­nation</interp> by the <orgName ref="#CHE">cheerleaders</orgName>." <interp ana="ALL">“We were neglected help by them,”</interp> she said. <interp ana="#ACTP">“We were forced to practice among our­ selves."</interp>
+      </p>
+      <p>She continued that there was a feeling among the black <persName ref="#CHE">girls</persName> that they were <interp ana="#ALL">“finished before we got started.”</interp> Since so many <persName ref="#BLK">black</persName> <persName ref="#CHE">girls</persName> <interp ana="#ALL">felt they were being ignored</interp>, <interp ana="#ACTP">they dropped out</interp>, she said. The <persName ref="#DEF">defense</persName> <interp ana="#ACTP">called to court</interp> a current <persName ref="#CHE">cheerleader</persName> who said she herself was <interp ana="#ALL">discouraged when she first tried out.</interp>
+      </p>
+      <p><interp ana="#ACTP">She said</interp> each <persName ref="#CHE">cheerleader</persName> has as many as 20 to 30 <persName ref="#CHE">girls</persName> in her group at tryouts. It’s <interp ana="#ALL">“im­possible to devote a lot of time to one</interp> <persName ref="#CHE">girl</persName>. Most <persName ref="#CHE">girls</persName> <interp ana="#ACTP">learn their cheers by practicing among themselves," she said.</interp>
+      </p>
+      <p>"<interp ana="#ACTP">I’ve never told</interp> any <persName ref="#CHE">girl</persName> that I would not help her. At times, however, <interp ana="#ONG">It is necessary to tell</interp> a <orgName ref="#CHE">girl</orgName> <interp ana="#ONG">to wait a minute when you’re busy elsewhere."</interp> She said she and other <persName ref="#CHE">cheer­leaders</persName> <interp ana="#ACTP">helped</interp> <persName ref="#BLK">black</persName> <persName ref="#CHE">girls</persName> "arm and arm" learning various cheers.
+      </p>
+      <p>The <orgName ref="#CHE">cheerleaders</orgName> themselves <interp ana="#ONG">do not select</interp> the <persName ref="#CHE">girls</persName> in the final tryout. Members of the <persName ref="#FAC">fa­culty</persName> <interp ana="#ONG">are chosen</interp> to be judges, and <interp ana="#ONG">they select</interp> new <orgName ref="#CHE">cheerleaders</orgName>. However, the <orgName ref="#CHE">cheerleaders</orgName> <interp ana="#ONG">do cut</interp> <persName ref="#CHE">girls</persName> in the semifinals, <interp ana="#ONG">selec­ting which ones go on to the finals.</interp>
+      </p>
+      <p>In response to the charge that the <orgName ref="#CHE">cheerleaders</orgName> <interp ana="#ALL">practiced both overt and covert discrimination at their tryouts,</interp> <persName ref="#DEF">Brown</persName> <interp ana="#ACTP">produced written depositions</interp> from <persName ref="#CHE">girls</persName> who <interp ana ="#ACTP">had tried out</interp> this year, <interp ana="#SPEC">attesting to the fact</interp> that the <orgName ref="#CHE">cheerleaders</orgName> were <interp ana="#VAL">fair</interp> in their selection process and that <persName ref="#CHE">girls</persName> <interp ana="#ALL">were judged on ability alone.</interp>
+      </p>
+      <p><persName ref="#FAC">Stanley Pavey</persName>, assistant pro­fessor of psychology, <interp ana="#ACTP">testified</interp> earlier in the case that it is <interp ana="#SPEC">"a possibility that one can dis­criminate without really knowing it.”</interp>
+      </p>
+      <p><persName ref="#FAC">Pavey</persName> <interp ana="#ACTP">said</interp> the <orgName ref="#CHE">cheerleaders</orgName> <interp ana="#SPEC">could have inadvertently dis­criminated againt</interp> the <persName ref="#BLK">blacks</persName>. <persName ref="#DEF">Brown</persName> <interp ana="#ACTP">countered</interp> with, <interp ana="#SPEC">"Being under stress and strain as per­haps these</interp> <persName ref="#BLK">black</persName> <persName ref="#CHE">girls</persName> <interp ana="#SPEC">were, may­be they construed things that were normal as being discrimina­tory."</interp>
+      </p>
+    </div>
+</body>
+</text>
+</TEI>
