@@ -45,7 +45,7 @@
              <edition n="1">First edition</edition>
          </editionStmt>
          <extent>
-             <measure unit="pages" quantity="1">1 partial pages of original source material</measure>
+             <measure unit="pages" quantity="1">1 partial page of original source material</measure>
          </extent>
          <publicationStmt>
              <publisher>
@@ -73,7 +73,7 @@
                  <analytic>
                      <title>Cheerleaders -- A Tiny Issue</title>
                      <author>
-                         <persName xml:id="UND">Undefined</persName>
+                         <persName xml:id="UNK">Author Unknown</persName>
                      </author>
                  </analytic>
                  <monogr>
@@ -91,46 +91,43 @@
                      <biblScope unit="page">6</biblScope>
                  </monogr>
              </biblStruct>
-             <bibl xml:id="EP"><!--EVA THIS IS THE PART WHERE YOU PUT IN ALL THE CRITICAL THINKING CHOICES YOU MAKE! -->
-                 <title>PUT IN THE TITLE OF THE PROJECT HERE</title>
+             <bibl xml:id="EP">
+                 <title>TEI Coding for Justice and Responsibility</title>
                  <author>
                      <persName ref="#EMP">Eva Peskin</persName>
                  </author>
              </bibl>
              <bibl>
-                 <interpGrp resp="#EP" type="idea"> <!-- Search for "interGrp" in the TEI guidelines to learn more about how we can use this element to conduct an ideational analysis! -->
-                     <desc>Ideational analysis of freedom.</desc>
-                     <interp xml:id="LAND">Land</interp>
-                     <interp xml:id="LAB">Labor</interp>
-                     <interp xml:id="EDU">Education</interp>
-                     <interp xml:id="REL">Relief</interp>
-                     <interp xml:id="JUST">Justice</interp>
+                 <interpGrp resp="#EMP" type="idea">
+                     <desc>Problems and identified responsible parties.</desc>
+                     <interp xml:id="PROB">Problem identified</interp>
+                     <interp xml:id="SOL">Solution identified</interp>
+                     <interp xml:id="MAG">Statement of magnitude</interp>
+                     <interp xml:id="RESP">Responsible party</interp><!--I kept this tag here as something I wanted to code for, but I could not get it to work in the scheme of the article coding itself because it caused problems with persName coding. -->
                  </interpGrp>
              </bibl>
              </listBibl>
         </sourceDesc>
       </fileDesc>
       <encodingDesc>
-          <editorialDecl><!--EVA THIS IS THE PART WHERE YOU DESCRIBE YOUR LOGIC! -->
-              <p>All typographical errors have been preserved. When possible, suggested corrections are provided.</p>
-              <p>Structural formatting has been partially preserved. Page jumps and paragraphs have been retained, along with most line breaks. However, column breaks have not.</p>
+          <editorialDecl>
+              <p>Paragraphs and line breaks have been preserved, except where line break coding interfered with interpretation analysis.</p>
               <hyphenation eol="all">
                  <p>All end-of-line hyphenation has been regularized.</p>
              </hyphenation>
           </editorialDecl>
-          <projectDesc><!--EVA THIS IS THE PART WHERE YOU DESCRIBE YOUR LOGIC! -->
-              <p>This project aims to provide students, scholars, and practitioners with a basic introduction to the Text Encoding Initiative (TEI), in the hopes that XML training will help foster critical scholarship at the intersections of African American history, culture, and digital humanities. This free training has been provided as part of the <date from="2017" to ="2018">2017-2018</date><orgName ref="#AADHUM">AADHum</orgName> series of digital humanities incubators.</p> <!-- Use this space to craft an abstract that defines or describes the scope and purpose of the project -->
+          <projectDesc>
+              <p>This project is an assignment for the purpose of learning how to apply a Black Digital Humanities perspective through the methodology of text encoding. This assigment serves as a meanis for gaining a basic introduction to the Text Encoding Initiative (TEI), XML markup, and Github. In preparing this text, <persName ref="#EMP">I</persName> have considered how to use TEI in order to understand declarations of relative magnitude of manifestations of structural problems and identified responsible parties.</p>
           </projectDesc>
       </encodingDesc>
       <profileDesc>
           <langUsage>
               <language ident="en-US">United States English</language>
           </langUsage>
-          <particDesc>
+              <particDesc>
               <listOrg>
                   <org>
                       <orgName xml:id="UMD" ref="https://lccn.loc.gov/n79054042">University of Maryland, College Park</orgName>
-                      <idno type="LCAF">n79054042</idno>
                       <placeName>
                           <settlement>College Park</settlement>
                           <region>Maryland (<abbr>M.D.</abbr>)</region>
@@ -138,134 +135,40 @@
                       </placeName>
                   </org>
                   <org>
-                      <orgName xml:id="UMDLAW" ref="https://lccn.loc.gov/n85094063">University of Maryland, School of Law</orgName>
-                      <idno type="LCAF">n85094063</idno>
+                      <orgName xml:id="BSU" ref="https://www.facebook.com/blackstudentunion">Black Student Union</orgName>
                       <placeName>
-                          <settlement>Baltimore</settlement>
+                          <settlement>College Park</settlement>
                           <region>Maryland (<abbr>M.D.</abbr>)</region>
                           <country>United States of America (<abbr>U.S.A.</abbr>)</country>
                       </placeName>
-                  </org>
-                  <org>
-                      <orgName xml:id="UMDPHARM" ref="https://lccn.loc.gov/no2009018306">University of Maryland, School of Pharmacy</orgName>
-                      <idno type="LCAF">no2009018306</idno>
+                      <orgName xml:id="CHE" ref="https://www.marylandcheerleading.com/">University of Maryland Cheerleading Squad</orgName>
                       <placeName>
-                          <settlement>Baltimore</settlement>
+                          <settlement>College Park</settlement>
                           <region>Maryland (<abbr>M.D.</abbr>)</region>
                           <country>United States of America (<abbr>U.S.A.</abbr>)</country>
                       </placeName>
-                  </org>
-                  <org>
-                      <orgName xml:id="UMDDENT" ref="https://lccn.loc.gov/n88095497">University of Maryland, School of Dentistry</orgName>
-                      <idno type="LCAF">n88095497</idno>
-                      <placeName>
-                          <settlement>Baltimore</settlement>
-                          <region>Maryland (<abbr>M.D.</abbr>)</region>
-                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
-                      </placeName>
-                  </org>
-                  <org>
-                      <orgName xml:id="UMDNURS" ref="https://lccn.loc.gov/no2009017751">University of Maryland, School of Nursing</orgName>
-                      <idno>no2009017751</idno>
-                      <placeName>
-                          <settlement>Baltimore</settlement>
-                          <region>Maryland (<abbr>M.D.</abbr>)</region>
-                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
-                      </placeName>
-                  </org>
-                  <org>
-                      <orgName xml:id="HOW" ref="https://lccn.loc.gov/n79064543">Howard University</orgName>
-                      <idno type="LCAF">n79064543</idno>
-                      <placeName>
-                          <settlement>Washington</settlement>
-                          <region>District of Columbia (<abbr>D.C.</abbr>)</region>
-                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
-                      </placeName>
-                  </org>
-                  <org>
-                      <orgName xml:id="MORG" ref="https://lccn.loc.gov/n50071397">Morgan State College</orgName>
-                      <idno type="LCAF">n50071397</idno>
-                      <placeName>
-                          <settlement>Baltimore</settlement>
-                          <region>Maryland (<abbr>M.D.</abbr>)</region>
-                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
-                      </placeName>
-                      <note>Renamed as <orgName ref="https://lccn.loc.gov/n85066664">Morgan State University</orgName> in <date when="1975">1975</date>.</note>
-                  </org>
-                  <org>
-                      <orgName xml:id="ANNE" ref="https://lccn.loc.gov/n2001081467">University of Maryland, Eastern Shore</orgName>
-                      <idno type="LCAF">n2001081467</idno>
-                      <placeName>
-                          <settlement>Princess Anne</settlement>
-                          <region>Maryland (<abbr>M.D.</abbr>)</region>
-                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
-                      </placeName>
-                      <note>Frequently referred to by its location, Princess Anne.</note>
-                  </org>
-                  <org>
-                      <orgName xml:id="SUN" ref="https://lccn.loc.gov/no2010112182">The Baltimore Sun</orgName>
-                      <idno type="LCAF">no2010112182</idno>
-                      <placeName>
-                          <settlement>Baltimore</settlement>
-                          <region>Maryland (<abbr>M.D.</abbr>)</region>
-                          <country>United States of America (<abbr>U.S.A.</abbr>)</country>
-                      </placeName>
+                      <orgName xml:id="UN">Unknown place
+                        <note>The article identifies the Maryland State campus, but I could not find any such school, past or present, to clarify what the author is referring to.</note>
+                      </orgName>
                   </org>
               </listOrg>
               <listPerson>
-                  <person>
-                      <persName xml:id="BYRD" ref="https://lccn.loc.gov/no93017923">
-                          <forename>Harry</forename>
-                          <forename>Clifton</forename>
-                          <surname>Byrd</surname>
-                          <roleName type="office">University President, <orgName ref="#UMD">University of Maryland, College Park</orgName></roleName>
-                          <idno type="LCAF">no 93017923</idno>
-                      </persName>
-                  </person>
-                  <person>
-                      <persName xml:id="DGM" ref="https://lccn.loc.gov/n99043202">
-                          <forename>Donald</forename>
-                          <forename>Gaines</forename>
-                          <surname>Murray</surname>
-                      </persName>
-                      <idno type="LCAF">n99043202</idno>
-                  </person>
-                  <person>
-                      <persName xml:id="WBL">
-                          <roleName type="military">Major</roleName>
-                          <forename>Wilmore</forename>
-                          <surname>Leonard</surname>
-                      </persName>
-                  </person>
-                  <person>
-                      <persName xml:id="MBB">
-                          <forename>Martin</forename>
-                          <surname>Booth</surname>
-                      </persName>
-                  </person>
-                  <person>
-                      <persName xml:id="EM">
-                          <forename>Esther</forename>
-                          <surname>McCready</surname>
-                      </persName>
-                  </person>
-                  <person>
-                      <persName xml:id="HW">
-                          <forename>Hiram</forename>
-                          <surname>Whittle</surname>
-                      </persName>
-                  </person>
-                  <person>
-                      <persName xml:id="PJM" ref="https://lccn.loc.gov/n80048493">
-                          <forename>Parren</forename>
-                          <forename>James</forename>
-                          <surname>Mitchell</surname>
-                      </persName>
-                      <idno type="LCAF">n80048493</idno>
-                  </person>
                   <personGrp>
                       <persName xml:id="BLK">Black and African American people</persName>
-                      <note>This person group is necessary for the reading and interpretation of this text, as this text often uses "the negro" (gendered male) to generalize about all black and African Americans.</note>
+                      <note>The article uses black, Black, and Negro variously to denote Black and African American people. This person group collects all instances of Black and African American racial identifiers. There are instances where these qualifiers are used to directly describe individuals and groups of people, and other instances where these qualifiers are used to describe the general quality or broader demographic makeup of a place or group. The "persName" tag is used in all these cases in order to capture how race is used as a descriptor.</note>
+                  </personGrp>
+                  <personGrp>
+                      <persName xml:id="WHI">White people</persName>
+                      <note>The article identifies white racial identity, mostly in comparison to Black racial identity, and this group collects all instances of that identification. There are instances where these qualifiers are used to directly describe individuals and groups of people, and other instances where these qualifiers are used to describe the general quality or broader demographic makeup of a place or group. The "persName" tag is used in all these cases in order to capture how race is used as a descriptor.</note>
+                  </personGrp>
+                  <personGrp>
+                      <persName xml:id="STU">Students</persName>
+                  </personGrp>
+                  <personGrp>
+                      <persName xml:id="ADM">Administrators</persName>
+                  </personGrp>
+                  <personGrp>
+                      <persName xml:id="ATH">Athletes</persName>
                   </personGrp>
                   <personGrp>
                       <persName xml:id="USM">University System of Maryland (<abbr>U.S.M.</abbr>) Board of Regents</persName>
@@ -274,9 +177,6 @@
               </listPerson>
           </particDesc>
       </profileDesc>
-      <revisionDesc>
-          <change>No changes have been made at this time.</change> <!-- Use this space to later detail revisions to the digital text. -->
-      </revisionDesc>
   </teiHeader>
   <text>
       <body>
@@ -290,12 +190,33 @@
   <text>
     <body>
       <div>
-        <!--redo text with column breaks preserved-->
-        <p>Racism is a very grave is­-<lb break="no" />sue at the University. <lb break="yes" />It is an issue that concerns <lb break="no" />all black students on campus <lb break="no" />in a very personal way and it <lb break="no" />should concern the white stu-<lb break="yes" />­dents more for they are the <lb break="no" />ones guilty of racism.</p>
-        <p>The <orgName>Black Student Union</orgName>, of <lb break="no" />course, has a responsibility to <lb break="no" />its membership and to the en­-<lb break="yes" />tire University community to <lb break="no" />call attention to the racial <lb break="no" />problems that beset this cam­-<lb break="yes" />pus. But so far the only prob­-<lb break="yes" />lems that <orgName>BSU</orgName> has amplified <lb break="no" />are the home economics <lb break="no" />experiment which excluded <lb break="no" />Negro participants and the <lb break="no" />cheerleading squad which al­-<lb break="yes" />legedly discriminated against <lb break="no" />black students.</p>
-        <p>These are not fitting issues <lb break="no" />around which to build a cam­-<lb break="yes" />paign against latent and blatant <lb break="no" />racism on campus. Lack of <lb break="no" />representation on the cheer­-<lb break="yes" />leading squad is obviously a <lb break="no" />manifestation of a much larger <lb break="no" />problem but there are many <lb break="no" />students on campus, and <lb break="no" />worse, many administrators <lb break="no" />who seem to be unaware of <lb break="no" />these problems.</p>
-        <p>Why, in a state which is 15 per cent black, is the Univer­sity only 2 per cent black? Why is the University so weak in recruiting and awarding scholarships to black ath­letes? Why is the Board of Regents exclusively white? Why is the Maryland State campus so deplorable? Why is it predominantly black? Why is it that white Univer­sity students whisper to one another when they see a black student raise a clenched fist as the national anthem is sung at a basketball game? BSU has failed to make its real concerns known to the University community. It has failed to gain the sympathy of white students and adminis­trators who agree that the University is a racist institu­tion.</p>
-        <p>Because of its insistence on dwelling on relatively in­significant examples of dis­crimination, BSU seems to be attempting to *** students that there are larger racial problems on campus, and hence, no urgent ones. BSU is going about the prob­lem of eliminating racism on campus by attacking each in­stance of discrimination as it is discovered — no matter how insignificant, no matter how unintentional. Using that tact, BSU should eliminate racism in about 1,000 years. The correct approach is to attack the bigger problems and gain the sympathy of the mod­erate blacks and the liberal whites. With this sort of coalition, the administration and the student body can no longer afford to ignore BSU.</p>
+        <p>
+          <interp ana="#PROB">Racism</interp> is a very <interp ana="#MAG">grave</interp> is­-<lb break="no" />sue at the <orgName ref="#UMD">University</orgName>. <lb break="yes" />It is an issue that concerns <lb break="no" />all <persName ref="#BLK">black</persName> <persName ref="#STU">students</persName> on campus <lb break="no" />in a very <interp ana="#MAG">personal</interp> way and it <lb break="no" />should concern the <persName ref="#WHI">white</persName> <persName ref="#STU">stu-<lb break="yes" />­dents</persName> <interp ana="#MAG">more</interp> for they are the <lb break="no" />ones guilty of <interp ana="#PROB">racism</interp>.
+        </p>
+        <p>
+          The <orgName ref="#BSU">Black Student Union</orgName>, of <lb break="no" />course, has a responsibility to <lb break="no" />its membership and to the en­-<lb break="yes" />tire <orgName ref="#UMD">University</orgName> community to <lb break="no" />call attention to the racial <lb break="no" />problems that beset this cam­-<lb break="yes" />pus. But so far the only prob­-<lb break="yes" />lems that <orgName ref="#BSU">BSU</orgName> has amplified <lb break="no" />are the <interp ana="#PROB">home economics experiment</interp> which excluded <lb break="no" /><persName ref="#BLK">Negro</persName> participants and the <lb break="no" /><orgName ref="#CHE">cheerleading</orgName> squad which al­-<lb break="yes" />legedly <interp ana="#PROB">discriminated</interp> against <lb break="no" /><persName ref="#BLK">black</persName> <persName ref="#STU">students</persName>.
+        </p>
+        <p>
+          These are not fitting issues <lb break="no" />around which to build a cam­-<lb break="yes" />paign against <interp ana="#MAG">latent</interp> and <interp ana="#MAG">blatant</interp> <lb break="no" /><interp ana="#PROB">racism</interp> on campus. <interp ana="#PROB">Lack of representation</interp> on the <orgName ref="#CHE">cheer­-<lb break="yes" />leading</orgName> squad is obviously a <lb break="no" />manifestation of a <interp ana="#MAG">much larger</interp> <lb break="no" />problem but there are many <lb break="no" /><persName ref="#STU">students</persName> on campus, and <lb break="no" /><interp ana="#MAG">worse</interp>, many <persName ref="#ADM">administrators</persName> <lb break="no" />who seem to be <interp ana="#PROB">unaware</interp> of <lb break="no" />these problems.
+        </p>
+        <p><!--Both this paragraph and the next paragraph I wanted to tag as interp #PROB, but I could not find a way to preserve the textual elements - line breaks, person and organizational names, etc. - and also code for interpretation. This could be indicative of a limit to my coding skills, or to the set of parameters I chose to place on this text, or to TEI itself. -->
+          Why, in a state which is 15<lb break="no" /> per cent <persName ref="#BLK">black</persName>, is the <orgName ref="#UMD">Univer­-<lb break="yes" />sity</orgName> only 2 per cent <persName ref="#BLK">black</persName>?<lb break="no" /> Why is the <orgName ref="#UMD">University</orgName> so weak<lb break="no" /> in recruiting and awarding<lb break="no" /> scholarships to <persName ref="#BLK">black</persName> <persName ref="#ATH">ath­-<lb break="yes" />letes</persName>? Why is the <persName ref="#USM">Board of<lb break="no" /> Regents</persName> exclusively white?<lb break="no" /> Why is the <orgName ref="#UN">Maryland<lb break="no" /> State</orgName> campus so deplorable? Why<lb break="no" /> is it predominantly <persName ref="#BLK">black</persName>?
+        </p>
+        <p>
+          Why is it that <persName ref="#WHI">white</persName> <orgName ref="#UMD">Univer-<lb break="yes" />­sity</orgName> <persName ref="#STU">students</persName> whisper to one<lb break="no" /> another when they see a <persName ref="#BLK">black</persName><lb break="no" /> <persName ref="#STU">student</persName> raise a clenched fist<lb break="no" /> as the national anthem is sung<lb break="no" /> at a basketball game?
+        </p>
+        <p>
+          <orgName ref="#BSU">BSU</orgName> has failed to make its<lb break="no" /> <interp ana="#MAG">real</interp> concerns known to the<lb break="no" /> <orgName ref="#UMD">University</orgName> community. It has<lb break="no" /> <interp ana="#PROB">failed to gain the sympathy</interp> of<lb break="no" /> <persName ref="#WHI">white</persName> <persName ref="#STU">students</persName> and <persName ref="#ADM">adminis­-<lb break="yes" />trators</persName> who agree that the<lb break="no" /> <orgName ref="#UMD">University</orgName> is a racist institu­-<lb break="yes" />tion.
+        </p>
+        <p>
+          Because of its insistence<lb break="no" /> on dwelling on <interp ana="#MAG">relatively in­significant</interp> examples of dis­-<lb break="yes" />crimination, <orgName ref="#BSU">BSU</orgName> seems to<lb break="no" /> be attempting to convince<lb break="no" /> <persName ref="#STU">students</persName> that there are larger<lb break="no" /> racial problems on campus,<lb break="no" /> and hence, no <interp ana="#MAG">urgent</interp> ones.
+        </p>
+        <p>
+          <orgName ref="#BSU">BSU</orgName> is going about the prob­-<lb break="yes" />lem of eliminating <interp ana="#PROB">racism</interp> on<lb break="no" /> campus by attacking each in­-<lb break="no" />stance of <interp ana="#PROB">discrimination</interp> as it<lb break="no" /> is discovered — no matter how<lb break="no" /> <interp ana="#MAG">insignificant</interp>, no matter how<lb break="no" /> <interp ana="#MAG">unintentional</interp>. Using that tact,<lb break="no" /> <orgName ref="#BSU">BSU</orgName> should eliminate <interp ana="#PROB">racism</interp><lb break="no" /> in about 1,000 years.
+        </p>
+        <p>
+          The <interp ana="#SOL">correct approach</interp> is to<lb break="no" /> <interp ana="#SOL">attack the bigger problems</interp> and<lb break="no" /> <interp ana="#SOL">gain the sympathy</interp> of the mod-<lb break="no" />­erate <persName ref="#BLK">blacks</persName> and the liberal<lb break="no" /> <persName ref="#WHI">whites</persName>. With this sort of<lb break="no" /> coalition, the <persName ref="#ADM">administration</persName><lb break="no" /> and the <persName ref="#STU">student</persName> body can<lb break="no" /> no longer afford to ignore <orgName ref="#BSU">BSU</orgName>.
+        </p>
       </div>
     </body>
   </text>
