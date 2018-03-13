@@ -12,9 +12,13 @@ body {
 }
 
 title {
-  color: yellow;
+  color: black;
 }
 
 div {
   font-family: serif; color: white;
+}
+
+tei-interp {
+  font-weight:bold; color: yellow;
 }
