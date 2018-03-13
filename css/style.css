@@ -8,7 +8,7 @@ tei-teiHeader {
 }
 
 body {
-  background-color: cyan; border: 4px; border-color: magenta;
+  background-color: red; border: 4px; border-color: black;
 }
 
 title {
@@ -17,16 +17,4 @@ title {
 
 div {
   font-family: serif; color: white;
-}
-
-tei-supplied {
-  font-style: italic; color: magenta;
-}
-
-tei-supplied:before {
-  content: "["
-}
-
-tei-supplied:after {
-  content:"]"
 }
